@@ -480,19 +480,6 @@ setTimeout(() => {
         textarea.value = holdText[i] ?? ''
         textarea.nextElementSibling.style.display = "block"
         }
-
-
-        /*validateRE(textval[i]) ? 
-        (
-            holdText[i] = textarea.value,
-            textarea.value = textval[i],
-            textarea.parentElement.children[9].style.display = "none"
-         ) : 
-        (
-        textarea.value = '',
-        textarea.value = holdText[i] ?? '',
-        //textarea.nextElementSibling.innerHTML = `${textval} is not allowed`,
-        textarea.parentElement.children[9].style.display = "block");*/
        });
         }
 
@@ -502,35 +489,3 @@ setTimeout(() => {
 
 validate();
 
-/*const validator = (e) => {
-    
-    const validateRE = (stringVal) =>{
-        const whiteList = /^[a-zA-Z0-9().'",\s-]*$/;
-        return whiteList.test(stringVal);
-    }
-    if(validateRE(e.target.value)) {
-        return e.target.value;
-    } else return null;
-}
-const value = document.querySelector(".text-area");
-    value.onChange = function () {
-        console.log(this.value);
-        console.log("mnnmbmn")
-    }
-const handleValChange = (e) => {
-    
-    console.log(e.target.value);
-    const isValid = validator(e);
-    if(isValid) {
-        setValue(isValue);
-        document.nextElementSibling.style.display = "none";
-    } else document.nextElementSibling.style.display = "block";
-}*/
-
-
-
-      // submitallbtn?.addEventListener('click',validate);
-
-
-//document.getElementById("submitbtn").addEventListener("click", function(event) {validate(event);});
-//document.getElementById("submitallbtn").addEventListener("click", function(event) {validate(event);});
